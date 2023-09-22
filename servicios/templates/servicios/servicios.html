@@ -1,0 +1,26 @@
+{% extends "ProyectoWebApp/base.html"%}
+
+{% load static %}
+
+{% block content %}
+
+    {% for servicio in servicios %}
+
+
+
+      <div class="card mb-3" style="max-width: 540px;background-color: rgb(127, 185, 168);">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{servicio.titulo}}</h5>
+              <p class="card-text">{{servicio.contenido}}</p>
+              <p><img src="{{servicio.imagen.url}}" heigh ="100" /></p>
+             
+            </div>
+          </div>
+        </div>
+        </div>
+    {% endfor %}
+
+
+{% endblock %}
