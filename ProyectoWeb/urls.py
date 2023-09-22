@@ -21,5 +21,5 @@ from django.urls import path, include
 from ProyectoWebApp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('ProyectoWebApp/',include('ProyectoWebApp.urls')),
+    path('',include('ProyectoWebApp.urls')),
 ]
