@@ -34,7 +34,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item  {% if '/' in request.path %} active {% endif %}   px-lg-4">
+          <li class="nav-item  {% if '/' in request.path %}active{% endif %}   px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Home' %}">Inicio</a>
           </li>
           <li class="nav-item {% if 'servicios' in request.path %}active{% endif %} px-lg-4">
@@ -48,6 +48,9 @@
           </li>
           <li class="nav-item {% if '/blog' in request.path %}active{% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Blog' %}">Blog</a>
+          </li>
+          <li class="nav-item {% if '/personal' in request.path %}active{% endif %} px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Personal' %}">Personal</a>
           </li>
          
         </ul>

@@ -17,4 +17,7 @@ def blog(request):
 def contacto(request): 
     return render(request,'ProyectoWebApp/contacto.html' )
 
+def personal(request): 
+    return render(request,'ProyectoWebApp/personal.html' )
+
 
