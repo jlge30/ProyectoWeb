@@ -6,20 +6,19 @@
 
     {% for servicio in servicios %}
 
-
-
-      <div class="card mb-3" style="max-width: 540px;background-color: rgb(127, 185, 168);">
-        <div class="row g-0">
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">{{servicio.titulo}}</h5>
-              <p class="card-text">{{servicio.contenido}}</p>
-              <p><img src="{{servicio.imagen.url}}" heigh ="100" /></p>
-             
+        <section class="page-section clearfix">
+          <div class="container">
+            <div class="intro">
+              <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{servicio.imagen.url}}" alt="" style="width: 50%;">
+              <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                <h2 class="section-heading mb-4" >
+                  <span class="section-heading-lower">{{servicio.titulo}}</span>
+                  <span class="section-heading-upper">{{servicio.contenido}}</span>
+                </h2>
+              </div>
             </div>
           </div>
-        </div>
-        </div>
+        </section>
     {% endfor %}
 
 
