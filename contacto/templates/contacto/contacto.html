@@ -7,6 +7,12 @@
     {% if "valido" in request.GET %}
         <p>Información enviada correctamente</p>
     {% endif %}
+
+    {% if "novalido" in request.GET %}
+        <p>ERROR La informacion NO se ha podido enviar</p>
+    {% endif %}
+
+
     <form action="" method="POST" style="text-align: center;">
         {% csrf_token %}
     <table style="margin: 20px auto;">{{miFormulario.as_table}}</table>

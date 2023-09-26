@@ -142,4 +142,16 @@ MEDIA_ROOT =  BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+#configuracion del correo electrónico
+EMAIL_BACKEND ="django.core.mail.backends.smtp.EmailBackend"
 
+EMAIL_HOST="smtp.gmail.com"
+
+EMAIL_USE_TLS =True
+
+EMAIL_PORT=587
+
+EMAIL_HOST_USER="josedjango2023@gmail.com"
+
+EMAIL_HOST_PASSWORD="qvugsctdgllzuoce"
+#generar password desde gmail clave para aplicaciones menú de seguridad en dos pasos
