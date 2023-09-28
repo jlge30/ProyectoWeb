@@ -52,6 +52,9 @@
           <li class="nav-item {% if '/personal' in request.path %}active{% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Personal' %}">Personal</a>
           </li>
+          <li class="nav-item {% if '/admin' in request.path %}active{% endif %} px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="http://localhost:8000/admin/">Administrador</a>
+          </li>
          
         </ul>
       </div>
