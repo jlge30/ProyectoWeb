@@ -45,6 +45,9 @@ INSTALLED_APPS = [
     'contacto', 
     'tienda',
     'carro',
+    'autenticacion',
+    'crispy_forms',
+    'crispy_bootstrap4',
 
 ]
 
@@ -158,3 +161,7 @@ EMAIL_HOST_USER="josedjango2023@gmail.com"
 
 EMAIL_HOST_PASSWORD="qvugsctdgllzuoce"
 #generar password desde gmail clave para aplicaciones menú de seguridad en dos pasos
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_ALLOWED_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
